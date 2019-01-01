@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Test Project for WS Support</title>
+    <style>
+      body {
+        font: normal 16px/1.4 sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Test Project for WS Support</h1>
+    <p>Note in the code for this page within the script tag, when typing pageHeadline. will present the list of properties with the documentation overlay to the right (see screen shot) and the overlay includes a link to the Javascript properties, innerHTML in this case. After typing the full statement though, placing the cursor in the word innerHTML presents the documentation overlay without the link.</p>
+    <p>Same thing also occurs with Javascript methods, such as querySelector() in this page.</p>
+    <img src="missing-link-example-screenshots.png" alt="" style="max-width: 900px"/>
+    <script type="application/javascript">
+      var pageHeadline = document.querySelector("h1");
+      pageHeadline.innerHTML = "This a test.";
+    </script>
+  </body>
+</html>
